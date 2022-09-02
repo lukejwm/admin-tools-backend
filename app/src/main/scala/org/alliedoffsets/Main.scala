@@ -3,9 +3,9 @@
  */
 package org.alliedoffsets
 
-object Main extends App {
+import org.alliedoffsets.service.ProjectDataService
 
-  println(greeting())
+object Main extends App with ProjectDataService {
 
-  def greeting(): String = "Hello, world!"
+  runService("127.0.0.1", 8080)
 }
