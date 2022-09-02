@@ -7,10 +7,7 @@
  */
 
 plugins {
-    // Apply the scala Plugin to add support for Scala.
     id 'scala'
-
-    // Apply the application plugin to add support for building a CLI application in Java.
     id 'application'
 }
 
@@ -25,6 +22,16 @@ dependencies {
 
     // This dependency is used by the application.
     implementation 'com.google.guava:guava:31.0.1-jre'
+
+    // Key project dependencies
+    implementation 'com.typesafe.akka:akka-actor-typed_2.13:2.6.14'
+    implementation 'com.typesafe.akka:akka-stream-typed_2.13:2.6.14'
+    implementation 'com.typesafe.akka:akka-http_2.13:10.2.4'
+    implementation 'com.typesafe.akka:akka-http-spray-json_2.13:10.2.4'
+    implementation 'com.typesafe.slick:slick_2.13:3.4.0'
+    implementation 'com.typesafe.slick:slick-hikaricp_2.13:3.4.0'
+    implementation 'org.postgresql:postgresql:42.5.0'
+    implementation 'org.slf4j:slf4j-nop:2.0.0'
 
     // Use Scalatest for testing our library
     testImplementation 'junit:junit:4.13.2'

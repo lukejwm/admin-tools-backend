@@ -3,10 +3,9 @@
  */
 package org.alliedoffsets
 
-object App {
-  def main(args: Array[String]): Unit = {
-    println(greeting())
-  }
+object Main extends App {
+
+  println(greeting())
 
   def greeting(): String = "Hello, world!"
 }
